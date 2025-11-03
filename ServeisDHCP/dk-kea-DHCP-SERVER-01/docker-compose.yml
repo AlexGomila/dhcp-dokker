@@ -23,7 +23,7 @@ networks:
     driver: ipvlan
     driver_opts:
       parent: eth0 #  host interface that kea containers will use !!!!!!
-    enable_ipv6: true
+    enable_ipv6: false
     ipam:
       config:
         - subnet: 10.18.121.0/27 # subnet for kea4 server
